@@ -91,6 +91,19 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'server' => [
+            'driver' => env('DB_GAME_CONNECTION'),
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_GAME_HOST', 'localhost'),
+            'port' => env('DB_GAME_PORT', '1433'),
+            'database' => env('DB_GAME_DATABASE', 'Db_Tank'),
+            'username' => env('DB_USERNAME', 'sa'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true
+        ],
+
     ],
 
     /*
